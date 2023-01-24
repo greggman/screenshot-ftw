@@ -1,6 +1,6 @@
 {
   "name": "screenshot-ftw",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "take screenshots of windows or the screen across OSes",
   "main": "./dist/screenshot-ftw.cjs",
   "module": "./dist/screenshot-ftw.mjs",
