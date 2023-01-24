@@ -1,11 +1,11 @@
 {
   "name": "screenshot-ftw",
   "version": "1.0.2",
-  "description": "take screenshots of windows or the screen across oses",
-  "main": "src/screenshot.js",
-  "type": "module",
-  "types": "./src/screenshot.ts.d",
+  "description": "take screenshots of windows or the screen across OSes",
+  "main": "./dist/screenshot-ftw.cjs",
+  "types": "./dist/types/screenshot.d.ts",
   "scripts": {
+    "build": "rollup -c",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -20,5 +20,14 @@
   "bugs": {
     "url": "https://github.com/greggman/screenshot-ftw/issues"
   },
-  "homepage": "https://github.com/greggman/screenshot-ftw#readme"
+  "homepage": "https://github.com/greggman/screenshot-ftw#readme",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^24.0.1",
+    "@rollup/plugin-node-resolve": "^15.0.1",
+    "@rollup/plugin-typescript": "^11.0.0",
+    "@types/node": "^18.11.18",
+    "rollup": "^3.10.1",
+    "tslib": "^2.4.1",
+    "typescript": "^4.9.4"
+  }
 }
