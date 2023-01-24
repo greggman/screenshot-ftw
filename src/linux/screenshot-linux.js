@@ -1,4 +1,8 @@
-import spawn from '../spawn.js';
+import { spawn } from '../spawn.js';
+
+export async function getWindows() {
+  throw new Error('unimplemented');
+}
 
 export async function captureWindowByTitle(screenshotName, title) {
   throw new Error('unimplemented');

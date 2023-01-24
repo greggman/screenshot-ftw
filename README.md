@@ -15,12 +15,21 @@ npm install --save screenshot-ftw
 import * as screenshot from 'screenshot-ftw';
 
 ...
+const windows = await screenshot.getWindows();
+
 await screenshot.captureWindowByTitle("foo.png", "some window title");
-await screenshot.captureWindowById("foo.png", "some window id");
+await screenshot.captureWindowById("foo.png", windows[0].id);
 await screenshot.captureScreen("foo.png");
 ```
 
+`getWindows` returns an array of `{id: number, title: string}`
+where id can be passed to `captureWindowById`. This is useful for
+capturing a window who's title changes (for example a browser).
+Set the browser's window title to a known name, call `getWindows`
+and find its `id`. Then pass that `id` for all screenshots.
+
 Note: at the moment only .PNG format is supported
+
 
 ## To Do:
 

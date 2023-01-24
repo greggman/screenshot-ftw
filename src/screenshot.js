@@ -1,6 +1,6 @@
 import * as win from './win/screenshot-win.js';
-import * as mac from './win/screenshot-mac.js';
-import * as linux from './win/screenshot-linux.js';
+import * as mac from './mac/screenshot-mac.js';
+import * as linux from './linux/screenshot-linux.js';
 
 function getPlatformAPI() {
   switch (process.platform) {
