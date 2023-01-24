@@ -12,7 +12,7 @@ npm install --save screenshot-ftw
 ```
 
 ```
-import * as screenshot from 'screenshot-ftw';
+import { screenshot } from 'screenshot-ftw';
 
 ...
 const windows = await screenshot.getWindows();

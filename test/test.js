@@ -1,6 +1,4 @@
-import screenshot from '../src/screenshot.js';
-
-console.log(screenshot, Object.keys(screenshot));
+import { screenshot } from '../src/screenshot.js';
 
 async function main() {
   const windows = await screenshot.getWindows();

@@ -17,5 +17,5 @@ function getPlatformAPI(): ScreenshotAPI {
 
 export * from './window-info';
 
-const platformAPI = getPlatformAPI();
-export default platformAPI;
+const screenshot = getPlatformAPI();
+export { screenshot };
