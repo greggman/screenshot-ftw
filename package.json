@@ -3,9 +3,8 @@
   "version": "1.0.2",
   "description": "take screenshots of windows or the screen across oses",
   "main": "src/screenshot.js",
-  "module": "src/screenshot.js",
   "type": "module",
-  "types": "./src/screenshot-ftw.ts.d",
+  "types": "./src/screenshot.ts.d",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
