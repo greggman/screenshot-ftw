@@ -1,4 +1,4 @@
-src/win/screenshot-win/
-src/win/list-active-windows/
+src/
 test/
 test.png
+build/

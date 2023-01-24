@@ -1,11 +1,13 @@
 {
   "name": "screenshot-ftw",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "take screenshots of windows or the screen across OSes",
   "main": "./dist/screenshot-ftw.cjs",
+  "module": "./dist/screenshot-ftw.mjs",
+  "type": "module",
   "types": "./dist/types/screenshot.d.ts",
   "scripts": {
-    "build": "rollup -c",
+    "build": "rollup -c && node build/build.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
